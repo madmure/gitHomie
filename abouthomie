@@ -1,0 +1,340 @@
+
+<!doctype html>
+<html>
+<head>  
+<meta charset="UTF-8">
+
+<title>HOMIE</title>
+
+<link rel="icon" href="img/favicon.ico" type="image/x-icon"/>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon"/>
+
+<style>
+
+body {
+  background-color: #CCC;
+  text-align: center;
+  border-right-width: 50px;
+  border-left-width: 50px;
+  border-right-style: double;
+  border-left-style: double;
+  border-right-color: #FFF;
+  border-left-color: #FFF;
+  border-top-width: 20px;
+  border-top-style: double;
+  border-top-color: #FFF;
+  height: 100%;
+    
+}
+
+  blockquote,q{
+    quotes:none
+  }
+
+  blockquote:before,blockquote:after,q:before,q:after{
+    content:none
+  }
+
+  table{
+    border-collapse:collapse;
+    border-spacing:0
+  }
+            
+  * { 
+    box-sizing:border-box;-webkit-transition: 0.5s ease;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
+  }
+            
+  h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 50px;  
+    text-align: center;
+    color:#FFF;
+  }
+
+  p {
+    font-size: 20px; 
+    line-height: 36px; 
+    color: #696f6f;
+  }
+
+  a {
+    color: #666;
+  }
+  
+  .padding_block h1 {
+    font-size: 35px; 
+    font-weight: bold; 
+    margin-top: 120px; 
+    margin-bottom: 60px; 
+    letter-spacing: -1px; 
+    color: #1b1f23;
+    line-height: 45px;
+  }
+
+  .padding_block p {
+    margin-bottom: 38px
+  }
+
+  .padding_block li {
+    margin-bottom: 27px;
+    font-size: 20px; 
+    color: #b1ccc6; 
+    font-weight: 300;
+  }
+
+  .padding_block li a {
+    color: #1b1f23; 
+    font-weight: normal;
+  }
+  
+  .quote {
+    font-size: 35px; 
+    font-weight: 300; 
+    line-height: 50px; 
+    padding-top: 70px; 
+    padding-bottom: 70px; 
+    letter-spacing: -1px; 
+    color: #1b1f23;
+  }
+
+  .quote b {
+    font-weight: 800; 
+    letter-spacing: -2px;
+  }
+
+  .wrap {
+    padding-top: 105px; 
+    padding-bottom: 105px; 
+    width: 100%; 
+    max-width: 700px; 
+    margin: 0 auto; 
+    padding: 105px 20px;
+  }
+  
+
+  .default_img {
+    padding-top: 70px; 
+    padding-bottom: 70px;
+  }
+
+  img {
+    background-repeat: no-repeat;
+      background-size: cover;
+  }      
+  
+  @media screen and (max-width: 480px) {
+    h1 {
+      margin-bottom: 30px; 
+      font-size: 30px;
+      color: #FFF;
+    }
+
+    p {
+      font-size: 18px; 
+      line-height: 32px;
+    }
+
+    .wrap {
+      padding-top: 20px; 
+      padding-bottom: 20px;
+    }
+
+    .padding_block h1 {
+      margin-top: 80px; 
+      margin-bottom: 30px; 
+      font-size: 30px; 
+      line-height: 40px;
+    }
+
+    .padding_block p {
+      margin-bottom: 25px;
+    }
+
+    .padding_block li {
+      margin-bottom: 20px;
+    }
+
+    .padding_block li a {
+      font-size: 18px;
+    }
+
+    .default_img {
+      padding-top: 40px; 
+      padding-bottom: 40px;
+    }
+
+
+    .quote {
+      font-size: 20px; 
+      line-height: 40px; 
+      padding-top: 20px; 
+      padding-bottom: 20px;
+    }
+  }
+  
+a:link {
+  text-decoration: underline;
+}
+a:visited {
+  text-decoration: underline;
+  color: #F39;
+}
+a:hover {
+  text-decoration: none;
+  color: #999;
+}
+a:active {
+  display:block;
+  text-decoration: underline;
+  color: #428ACA;
+}
+
+.all {
+  background-color: #CCC;
+  text-align: center;
+  border-right-width: 50px;
+  border-left-width: 50px;
+  border-right-style: double;
+  border-left-style: double;
+  border-right-color: #FFF;
+  border-left-color: #FFF;
+  border-top-width: 20px;
+  border-top-style: double;
+  border-top-color: #FFF;
+  
+}
+
+.all .Heading {
+  height: 122px;
+}
+
+.Heading h1 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 50px;  
+  text-align: center;
+  color:#FFF;
+}
+
+.menu a {
+  border-top: 2px solid #636366;
+  border-bottom: 2px solid #636366;
+  font-family: 'Open Sans', sans-serif;
+  color: #333;
+  font-size: 11px;
+  font-weight: bolder;
+  text-transform: uppercase;
+  text-align:center;
+  padding:5px;
+}
+
+.navigation {
+  text-align:center;
+  background-color: #FFF;
+}
+
+.navigation ul{
+  background-color: #FFF;
+  padding-top: 15px;
+  padding-bottom: 18px;
+  text-align: center;
+  display: block;
+  list-style-position: outside;
+  overflow: visible;
+  visibility: inherit;
+}
+
+
+.navigation li {
+    display: inline;
+  text-align:center;
+  padding-right: 10px;
+}
+
+.all .jumbotron {
+  background-image: url(http://fc05.deviantart.net/fs70/f/2010/152/d/f/Magic_Forest__Silva_Arcanas_by_anonymous738.jpg);
+  height: 500px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.all .jumbotron .searchbar {
+  position: relative;
+    top:100px;
+  text-align:center
+  color: #FFF;
+}
+
+.all .jumbotron .searchbar h1 {
+  color: #FFF;
+    font-size: 30px;  
+    font-family: 'Shift', sans-serif;
+    font-weight: bold;
+}
+    
+</style>
+
+</style>
+</head>
+
+<body>
+
+
+<div class = "all">
+
+<div class="Heading">
+
+	<h1>About Homie</h1>
+    
+    <div class="menu">
+    
+		<div class="navigation">
+		<div class="container">
+    
+        <ul ='fa fa-bars'>
+        
+			<li class = "active"><a href="#">About</a></li>
+            <li><a href="HomieAccomodationCost.html">Loan</a></li>
+            <li><a href="#">Massage us</a></li>
+            <li><a href="#">Log In</a></li>
+            <li><a href="Homie.html">Home</a></li>
+        </ul>
+        
+		</div> 
+		</div> 
+	</div>
+</div>
+
+<div class="wrap">
+	
+      <p> Imagine your dreamhome. What do you see? Maybe you see yourself sitting and having a drink in your newly bought sofa, looking out over the central of Stockholm. Or maybe you see yourself close to nature, opening a window and feeling the sun in your face. However, in process from dream to reality, you often occur bumbs in the road. On a website the realestate may <b>look</b> perfect and <b>cost</b> within your budge. However, when you finally go to visit it IRL, the reality may not match with the information you were provided when browsing. Info like, how close it is to nature, how much noise the neightbourhood generates, how polluted the air is and so on.</p>
+
+    <br />
+       
+       <img src="http://images4.fanpop.com/image/photos/21800000/Horses-beautiful-nature-21888620-1172-722.jpg" class="default_img">
+       
+       <p> What if there was a service in which you could find not only the internal info concerning a recident, but also important external info? This is all possible with our new service! This service will give you a more complete picture of what you are looking at in order to help you find your dream home!&nbsp;    </p>
+       
+       
+       <img src="http://homes907.com/wp-content/uploads/2013/07/bigstock-Happy-family-at-home-Real-est-46211113.jpg" class="default_img"></a>
+       
+       <h1>The house-hunting prologue</h1>
+       
+       <p>Lets say you have found your dreamhome, <b>AWESOME!</b> In order to make this dream come true, you now might want to validate your financial position? Or find a service which calculates your economical situation in terms of taking a loans? Just navigate to the menu and click on the <b>loan</b> tab. This will quick and easily direct you to our <b>accommodation costs</b> page, which allows you to choose a bank and thereby endup on their financial pages. 
+       
+       <div class="quote">Homie is <b>everything</b> you need in order to find your <b>dreamhome</b>
+       </div>
+       </p>
+       
+		<p>Feel welcome to leave a review on how this service worked for you on your finding-a-home quest! :)
+		</p>
+
+
+</div>
+</div>
+
+</body>
+</html>
